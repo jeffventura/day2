@@ -1,0 +1,88 @@
+/*set default margin and padding*/
+body {
+	padding: 0PX;
+	margin: 0px;
+	background: color white;
+	font-size: 16px;
+	font-family: arial,helvitica;
+}
+/*this is to remove the bullet*/
+#nav-list{
+	list-style-type: none;
+	padding: 10px;
+	margin: 0px;
+	background-color: rgb(86, 85, 81);
+	overflow:hidden;
+}
+/*float inline display*/
+li{
+	text-align: center;
+}
+/*to set display block*/
+
+li, a{
+	display: block;
+}
+
+/*to remove underline and add padding between the links*/
+a {
+   padding: 10PX;
+   text-decoration: none;
+   color: black;
+   transition: .5s;
+}
+a:hover{
+    background-color: #9D354B;
+    color: black;
+
+}
+.image-area{
+	background-image:linear-gradient(to left, rgba(241, 39, 17,0), rgba(86, 85, 81,2)), url("bg2.jpg");;
+	background-color: black;
+	background-position: center center;
+	background-size: cover;
+	padding-top: 250px;
+	padding-bottom: 250px;
+
+
+}
+
+.image-text{
+	 position: absolute;
+     text-align: center;
+     background-color: none;
+     color: white;
+     font-size:3rem;
+     color: black;
+     font-family: 'Lobster', cursive;
+}
+.services{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+.cards{
+	margin-right: auto;
+	margin-left: auto;
+	width: 300px;
+	justify-content space-around;
+	border:1px solid;
+	box-shadow: 5px 10PX 10PX 10PX #251220;
+	padding: 10px;
+	font-size: 20px
+	font-family: 'Arvo', serif;
+}
+.footer-nav{
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+
+}
+
+/*to make navbar to make vertical*/
+@media screen and (min-width: 700px){
+	#nav-list li{
+		float:left;
+	    }
+
+}
